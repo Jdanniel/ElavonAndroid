@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/button_item_desc" >
+    <RelativeLayout 
+        android:id="@+id/layout_terminal_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--android:layout_below="@+id/layout_terminal_almacen">-->
+	    <TextView
+	        android:id="@+id/terminal_text_brand_connectivity"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="3dp"
+	        android:text="@string/terminal_text_brand"
+	        android:textSize="14sp"
+	        android:textStyle="bold"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    <TextView
+	        android:id="@+id/terminal_text_brand_connectivity_content"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="3dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/terminal_text_brand_connectivity"
+	        android:text="@string/request_detail_initial_text"
+	        android:textSize="14sp"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	</RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/layout_terminal_modelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_terminal_marca">
+	    <TextView
+	        android:id="@+id/terminal_text_model_appplication"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="3dp"
+	        android:text="@string/terminal_text_model"
+	        android:textSize="14sp"
+	        android:textStyle="bold"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    <TextView
+	        android:id="@+id/terminal_text_model_appplication_content"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="3dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/terminal_text_model_appplication"
+	        android:textSize="14sp"
+	        android:text="@string/request_detail_initial_text"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	</RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/layout_terminal_cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_terminal_modelo">
+	    <TextView
+	        android:id="@+id/terminalCantidadTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="3dp"
+	        
+	        android:text="@string/terminal_text_count"
+	        android:textSize="14sp"
+	        android:textStyle="bold"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    <TextView
+	        android:id="@+id/terminalCantidadTextViewContent"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="3dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/terminalCantidadTextView"
+	        android:textSize="14sp"
+	        android:text="@string/request_detail_initial_text"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	</RelativeLayout>
+</RelativeLayout>

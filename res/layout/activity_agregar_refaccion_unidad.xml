@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AgregarRefaccionUnidadActivity" >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/update_add_repair_unit_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:id="@+id/update_add_repair_unit_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/base_toolbar_title"
+            android:textColor="@color/white" />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/update_add_repair_unit_toolbar">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/addrefSkuTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_sku_text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <EditText
+                android:id="@+id/addrefSkuEditText"
+                android:layout_width="312dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:selectAllOnFocus="true"
+                android:singleLine="true" >
+                <requestFocus />
+            </EditText>
+            <ListView
+                android:id="@+id/addrefSKUListView"
+                android:layout_width="match_parent"
+                android:layout_height="133dp" >
+            </ListView>
+            <TextView
+                android:id="@+id/addrefNoSerieTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_noserie_text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <EditText
+                android:id="@+id/addrefNoSerieEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLines="1"
+                android:singleLine="true" />
+            <CheckBox
+                android:id="@+id/addrefNuevaCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_nueva_check"
+                android:visibility="gone" />
+            <CheckBox
+                android:id="@+id/addrefDaniadaCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_daniada_check" />
+            <Button
+                android:id="@+id/addrefAgregarButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_agregar_button" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

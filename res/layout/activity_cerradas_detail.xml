@@ -1,0 +1,411 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/request_list_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:id="@+id/request_list_detail_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/base_toolbar_title"
+            android:textColor="@color/white" />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/base_form_vertical"
+        android:paddingRight="@dimen/base_form_vertical"
+        android:paddingTop="@dimen/base_form_vertical"
+        android:paddingBottom="@dimen/base_form_vertical"
+        android:layout_marginTop="?attr/actionBarSize">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/noArTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:text="@string/request_detail_no_ar"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/lightImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".1"
+                    android:src="@drawable/green_button" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/noArTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_no_ar"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_status_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/statusTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/descClienteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_cliente"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/descClienteTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/noAfiliacionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_afiliacion"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/noAfiliacionTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/fecAltaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_fec_reporte"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/fecAltaTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/fecGarantiaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_fec_garantia"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/fecGarantiaTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/fecCierreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_fec_cierre"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/fecCierreTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/fecAtencionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_fec_cita"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/fecAtencionTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/descServicioTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_servicio"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/descServicioTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/sintomaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_descripcion"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/sintomaTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/bitacoraTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_bitacora"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/bitacoraTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic"
+                android:textIsSelectable="true"
+                />
+            <TextView
+                android:id="@+id/noSerieTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_noserie"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/noSerieTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/descEquipoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_dispositivo"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/descEquipoTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/descConnTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_connectivity"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/descConnTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/descSoftwareTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_software"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/descSoftwareTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/direccionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_direccion"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/direccionTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/descNegocioTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_negocio"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/descNegocioTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/telefonoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_telefono"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/telefonoTextViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/textViewDetailTitleSim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/title_no_sim"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textViewDetailSim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/textViewDetailTitleClaveRechazo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/title_clave_rechazo"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textViewDetailClaveRechazo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".1"
+                android:text="@string/request_detail_initial_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+        </LinearLayout>
+	</ScrollView>
+</RelativeLayout>

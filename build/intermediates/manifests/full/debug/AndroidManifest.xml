@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.artefacto.microformas"
+    android:versionCode="4"
+    android:versionName="1.02" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.artefacto.microformas.application.MicroformasApp"
+        android:allowBackup="false"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.artefacto.microformas.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.RequestListActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.RequestDetailActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RequestListActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.ViaticosActivity"
+            android:label="@string/title_activity_viaticos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.ViaticosListActivity"
+            android:label="@string/title_activity_viaticos_list"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViaticosActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.RefaccionesActivity"
+            android:label="@string/title_activity_refacciones"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.PhotoTakingActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.ImageBrowserActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.CommentActivity"
+            android:label="@string/title_activity_comment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.RefaccionesCatalogsActivity"
+            android:label="@string/title_activity_refacciones_catalogs"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.CierreActivity"
+            android:label="@string/title_activity_cierre"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RequestDetailActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.CierreRechazoActivity"
+            android:label="@string/title_activity_cierre_rechazo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.InventoryMovementSupplyActivity"
+            android:label="@string/title_activity_inventory_movement_supply"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InventoryMovementsActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.SustitucionesActivity"
+            android:label="@string/title_activity_substitutions"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InventoryMovementsActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.InstalacionActivity"
+            android:label="@string/title_activity_instalacion"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.UnidadInstalacionCatalogsActivity"
+            android:label="@string/title_activity_unidad_instalacion_catalogs"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.artefacto.microformas.services.GetUpdatesService"
+            android:enabled="true" />
+
+        <receiver android:name="com.artefacto.microformas.receiver.UpdateScheduler" />
+
+        <activity
+            android:name="com.artefacto.microformas.RetiroActivity"
+            android:label="@string/title_activity_retiro"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.InsertNewMovementSupplyActivity"
+            android:label="@string/title_activity_insert_new_movement_supply"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InventoryMovementSupplyActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.InventoryMovementsActivity"
+            android:label="@string/title_activity_inventory_movements"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RequestDetailActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.ActualizacionActivity"
+            android:label="@string/title_activity_actualizacion"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.InformacionCierreActivity"
+            android:label="@string/title_activity_informacion_cierre"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.AgregarUnidadNegocioActivity"
+            android:label="@string/title_activity_agregar_refaccion_unidad"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActualizacionActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.GeoLocalizacionActivity"
+            android:label="@string/title_activity_geo_localizacion"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.InventorySearchActivity"
+            android:label="@string/title_activity_inventory_search_result"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InventoryActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.DetailUnitActivity"
+            android:label="@string/title_activity_unidad_detail"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InventorySearchActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.ProcessShipmentListActivity"
+            android:label="@string/title_activity_process_shipment_list"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InventoryActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.ReceptionsListActivity"
+            android:label="@string/title_activity_receptions_list"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InventoryActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.ProcessShipmentActivity"
+            android:label="@string/pend_activity_envio_pendiente"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.ReceptionActivity"
+            android:label="@string/title_activity_shipment_detail"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ReceptionsListActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.PendingsListActivity"
+            android:label="@string/title_activity_pendings_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.VerRefaccionesActivity"
+            android:label="@string/title_activity_ver_refacciones"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.RefaccionesUnidadActivity"
+            android:label="@string/title_activity_refacciones_unidad"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.LogComentarioActivity"
+            android:label="@string/title_activity_log_comentario"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.FileBrowserActivity"
+            android:label="@string/title_activity_file_browser"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.AgregarRefaccionUnidadActivity"
+            android:label="@string/title_activity_agregar_refaccion_unidad"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.TerminalActivity"
+            android:label="@string/title_activity_terminal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.TerminalListActivity"
+            android:label="@string/title_activity_terminal_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.SearchingInsumoActivity"
+            android:label="@string/insumo_searching_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.SearchingRefaccionActivity"
+            android:label="@string/refaccion_searching_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.SearchingTerminalActivity"
+            android:label="@string/terminal_searching_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.TermsActivity"
+            android:label="@string/title_activity_terms"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.SparePartActivity"
+            android:label="@string/title_activity_spare_part"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.PendienteInsumoActivity"
+            android:label="@string/title_activity_pendiente_insumo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.SparePartListActivity"
+            android:label="@string/title_activity_spare_part_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.PendienteInsumoListActivity"
+            android:label="@string/title_activity_pendiente_insumo_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.LookForSuppliesActivity"
+            android:label="@string/title_activity_look_for"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.CausaRetiroActivity"
+            android:label="@string/title_activity_causa_retiro"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.ServerActivity"
+            android:label="@string/title_activity_server"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.NewShipmentActivity"
+            android:label="@string/title_activity_new_shipment"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InventoryActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.NewShipmentSearchActivity"
+            android:label="@string/title_activity_new_shipment_search"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NewShipmentActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.NewShipmentSearchSuppliesActivity"
+            android:label="@string/title_activity_new_shipment_search_insumo"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NewShipmentActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.NewShipmentSearchSimsActivity"
+            android:label="@string/title_activity_new_shipment_search_sim"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NewShipmentActivity" />
+        </activity>
+        <activity
+            android:name="com.artefacto.microformas.InventoryActivity"
+            android:label="@string/title_activity_inventory"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

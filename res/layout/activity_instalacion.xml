@@ -1,0 +1,228 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstalacionActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView 
+                android:id="@+id/idUnidadTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/instalacion_id_unidad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" 
+                android:visibility="gone"/>
+
+        	<TextView
+            android:id="@+id/idUnidadTextViewContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight=".1"
+            android:text="@string/instalacion_initial_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic"  
+            android:visibility="gone"/>
+        	
+
+        	<TextView
+            android:id="@+id/clienteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/instalacion_cliente"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="22dp"
+            android:textStyle="bold" 
+            android:visibility="gone"/>
+
+        	<TextView
+            android:id="@+id/clienteTextViewContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight=".1"
+            android:text="@string/instalacion_initial_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic" 
+            android:visibility="gone"/>
+        	
+        	<TextView
+            android:id="@+id/marcaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/instalacion_marca"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="22dp"
+            android:textStyle="bold" 
+            android:visibility="gone"/>
+
+        	<TextView
+            android:id="@+id/marcaTextViewContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight=".1"
+            android:text="@string/instalacion_initial_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic" 
+            android:visibility="gone"/>
+            
+        	<TextView
+            android:id="@+id/modeloTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/instalacion_modelo"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="22dp"
+            android:textStyle="bold" 
+            android:visibility="gone"/>
+
+        	<TextView
+            android:id="@+id/modeloTextViewContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight=".1"
+            android:text="@string/instalacion_initial_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic" 
+            android:visibility="gone"/>
+        	
+        	<TextView
+            android:id="@+id/noSerieTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/instalacion_no_serie"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="22dp"
+            android:textStyle="bold"
+         	android:visibility="gone"/>
+
+        	<TextView
+            android:id="@+id/noSerieTextViewContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight=".1"
+            android:text="@string/instalacion_initial_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic"
+            android:visibility="gone"/>
+        	
+        	<TextView
+            android:id="@+id/statusUnidadTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/instalacion_status_unidad"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="22dp"
+            android:textStyle="bold" 
+            android:visibility="gone"/>
+
+        	<TextView
+            android:id="@+id/statusUnidadTextViewContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight=".1"
+            android:text="@string/instalacion_initial_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic" 
+            android:visibility="gone"/>
+
+        	<TextView
+            android:id="@+id/noEquipoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/instalacion_no_equipo"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="22dp"
+            android:textStyle="bold" 
+            android:visibility="gone"/>
+
+        	<EditText
+        	    android:id="@+id/noEquipoTextViewContent"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_marginBottom="15dp"
+        	    android:layout_weight=".1"
+        	    android:maxLength="20"
+        	    android:textAppearance="?android:attr/textAppearanceMedium"
+        	    android:textStyle="italic"
+        	    android:inputType="number"
+        	    android:width="150dp" 
+                android:visibility="gone"/>
+			
+        	
+        	<LinearLayout
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content" >
+        	    
+        	    <Button
+	        	    android:id="@+id/buscarUnidadButton"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_weight=".1"
+	        	    android:layout_marginRight="30dp"
+	        	    android:text="@string/instalacion_buscar_unidad" 
+	        	    android:onClick="buscarUnidadButtonClick"/>
+        	    <Button
+	        	    android:id="@+id/confirmarButton"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_weight=".1"
+	        	    android:text="@string/instalacion_confirmar" 
+	        	    android:onClick="confirmarButtonClick"
+	        	    android:visibility="invisible"
+	        	    />
+        	    
+        	</LinearLayout>
+        	
+        	<View
+		        android:id="@+id/UnidadesInstaladasSeparator"
+		        android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:background="@android:color/darker_gray" />
+        	
+        	<TextView
+            android:id="@+id/unidadesInstaladasTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/instalacion_instaladas"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+        	
+        	<ListView 
+        	    android:id="@+id/lvwUnidadesInstaladas"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:scrollbars="none"
+        	    >
+        	    
+        	</ListView>
+        	
+        		
+        </LinearLayout>
+
+    </ScrollView>
+    
+</RelativeLayout>

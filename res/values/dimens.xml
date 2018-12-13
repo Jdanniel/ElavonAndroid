@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="base_form_horizontal">7dp</dimen>
+    <dimen name="base_form_vertical">10dp</dimen>
+    <dimen name="base_text_top_margin">2dp</dimen>
+    <dimen name="base_sec">18dp</dimen>
+    <dimen name="base_list_single_item">10dp</dimen>
+    <dimen name="base_toolbar_title">20sp</dimen>
+
+    <dimen name="login_logo_width">219dp</dimen>
+    <dimen name="login_logo_height">200dp</dimen>
+
+    <dimen name="base_radio_sp">10sp</dimen>
+    <dimen name="base_form_sp">11sp</dimen>
+    <dimen name="base_detail_sp">22sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

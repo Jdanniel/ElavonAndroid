@@ -1,0 +1,110 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SustitucionesActivity" >
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/substitutions_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="?attr/colorPrimary"
+		android:minHeight="?attr/actionBarSize"
+		android:layout_alignParentTop="true"
+		app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+		app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+		<TextView
+			android:id="@+id/substitutions_toolbar_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:layout_centerVertical="true"
+			android:textStyle="bold"
+			android:textSize="@dimen/base_toolbar_title"
+			android:textColor="@color/white" />
+	</android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/substitutions_toolbar">
+		<LinearLayout
+		    android:id="@+id/layoutSustitucion"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+			<TextView
+			    android:id="@+id/UnidadesTecnicoLabel"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/sustitucion_unidadestecnico_text" />
+		    <RadioGroup
+		        android:id="@+id/sustitucionesUnidadesTecnicoRadioGroup"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true" >
+		    </RadioGroup>
+		    <TextView
+		        android:id="@+id/sustitucionesNoEquipoTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/sustitucion_noequipo" />
+		    <EditText
+		        android:id="@+id/sustitucionesNoEquipoEditText"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:singleLine="true"
+		        android:ems="10"/>
+		    <View
+		        android:id="@+id/UnidadesTecnicoSeparator"
+		        android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:background="@android:color/darker_gray" />
+		    <TextView
+		        android:id="@+id/UnidadesNegocioLabel"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/sustitucion_unidadesnegocio_text" />
+		    <RadioGroup
+		        android:id="@+id/sustitucionesUnidadesNegocioRadioGroup"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/unidadesTecnico" >
+		    </RadioGroup>
+		    <Button
+		        android:id="@+id/confirmarSustitucion"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/sustitucion_confirmarsustitucion_button"
+		        android:visibility="visible" />
+		    <View
+		        android:id="@+id/SustitucionesConfirmadasSeparator"
+		        android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:background="@android:color/darker_gray" />
+        	<TextView
+	            android:id="@+id/sustitucionesConfirmadasTextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight=".1"
+	            android:text="@string/sustitucion_confirmadas_text"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textSize="22dp"
+	            android:textStyle="bold" />
+        	<ListView 
+        	    android:id="@+id/lvwSustitucionesConfirmadas"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:scrollbars="none">
+        	</ListView>
+		    <View
+		        android:id="@+id/UnidadesNegocioSeparator"
+		        android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:background="@android:color/darker_gray" />
+	    </LinearLayout>
+	</ScrollView>
+</RelativeLayout>

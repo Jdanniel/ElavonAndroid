@@ -1,0 +1,1 @@
+[{"outputType":{"type":"INSTANT_RUN_MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":4,"versionName":"1.02","enabled":true,"outputFile":"MicroformasAndroid-debug.apk","fullName":"debug","baseName":"debug"},"path":"AndroidManifest.xml","properties":{"packageId":"com.artefacto.microformas","split":"","minSdkVersion":"14"}}]

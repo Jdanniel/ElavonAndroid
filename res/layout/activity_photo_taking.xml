@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoTakingActivity" >
+
+    <Button
+        android:id="@+id/buttonOtraFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="buttonTomarOtraOnClick"
+        android:text="Tomar Otra" />
+
+    <Button
+        android:id="@+id/ButtonCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/photo_taked"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/photo_taked"
+        android:onClick="buttonCancelarOnClick"
+        android:text="Cancelar" />
+
+    <Button
+        android:id="@+id/ButtonAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ButtonCancelar"
+        android:layout_alignLeft="@+id/buttonOtraFoto"
+        android:layout_alignParentRight="true"
+        android:onClick="buttonAceptarOnClick"
+        android:text="Aceptar" />
+
+    <ImageView
+        android:id="@+id/photo_taked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/buttonOtraFoto"
+        android:layout_toStartOf="@+id/buttonOtraFoto"
+        android:maxHeight="400dp"
+        android:minHeight="250dp"
+        android:minWidth="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/microformas_logo" />
+
+</RelativeLayout>

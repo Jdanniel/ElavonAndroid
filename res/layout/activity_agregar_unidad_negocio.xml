@@ -1,0 +1,161 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarUnidadNegocioActivity" >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/update_add_unit_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:id="@+id/update_add_unit_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/base_toolbar_title"
+            android:textColor="@color/white" />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/update_add_unit_toolbar">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/addUniModeloTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_modelo_text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <Spinner
+                android:id="@+id/addUniModeloSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/addUnitModConnectivityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_connectivity_text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <Spinner
+                android:id="@+id/addUnitModConnectivitySpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/addUnitModSoftwareText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_software_text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <Spinner
+                android:id="@+id/addUnitModSoftwareSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/addUniNoSerieTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_noserie_text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <EditText
+                android:id="@+id/addUniNoSerieEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLines="1"
+                android:singleLine="true" />
+            <TextView
+                android:id="@+id/addUniNoInventarioTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_noinventario_text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <EditText
+                android:id="@+id/addUniNoInventarioEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:ems="10" >
+                <requestFocus />
+            </EditText>
+            <TextView
+                android:id="@+id/addUniIdEquipoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_idequipo_text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <EditText
+                android:id="@+id/addUniIdEquipoEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:ems="10" />
+            <TextView
+                android:id="@+id/addUniNoSimTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_nosim_text"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <EditText
+                android:id="@+id/addUniNoSimEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:ems="10" />
+            <TextView
+                android:id="@+id/addUniCarrierTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_carrier_text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <Spinner
+                android:id="@+id/addUniCarrierSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/addUniNoImeiTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_noimei_text"
+                 android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <EditText
+                android:id="@+id/addUniNoImeiEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:ems="10" />
+            <Button
+                android:id="@+id/addUniAgregarButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adduni_agregar_button" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8"
+        android:orientation="vertical" >
+    	
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+            <TextView
+	            android:id="@+id/listrowunidadIdUnidadTextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/instalacion_id_unidad"
+	            android:textSize="11sp"
+	            android:textStyle="bold" />
+            
+	        <TextView
+	            android:id="@+id/listrowunidadIdUnidadTextViewContent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/instalacion_initial_text"
+	            android:textSize="11sp"
+	        	/>
+	    
+	    </LinearLayout>  
+	    
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+        	<TextView
+	            android:id="@+id/listrowunidadMarcaTextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/instalacion_marca"
+	            android:textSize="11sp"
+	            android:textStyle="bold" />
+	        
+	        <TextView
+	            android:id="@+id/listrowunidadMarcaTextViewContent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/instalacion_initial_text"
+	            android:textSize="11sp"
+	            />
+	        
+	    </LinearLayout>  
+	    
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+	        <TextView
+	            android:id="@+id/listrowunidadModeloTextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/instalacion_modelo"
+	            android:textSize="11sp"
+	            android:textStyle="bold" />
+	        
+	        <TextView
+	            android:id="@+id/listrowunidadModeloTextViewContent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/instalacion_initial_text"
+	            android:textSize="11sp" />
+	    
+	    </LinearLayout>  
+	    
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >    
+	       
+	        <TextView
+	            android:id="@+id/listrowunidadNoSerieTextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/instalacion_no_serie"
+	            android:textSize="11sp"
+	            android:textStyle="bold" />
+	        
+	        <TextView
+	            android:id="@+id/listrowunidadNoSerieTextViewContent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/instalacion_initial_text"
+	            android:textSize="11sp" />
+	     
+     	</LinearLayout>  
+	    
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+	        <TextView
+	            android:id="@+id/listrowunidadNoEquipoTextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/instalacion_no_equipo"
+	            android:textSize="11sp"
+	            android:textStyle="bold" />
+	        
+	        <TextView
+	            android:id="@+id/listrowunidadNoEquipoTextViewContent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/instalacion_initial_text"
+	            android:textSize="11sp" />
+	        
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:id="@+id/listrowunidadCancelarUnidadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/instalacion_cancelarinstalacion_button"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

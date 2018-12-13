@@ -1,0 +1,215 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeoLocalizacionActivity" >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/localization_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:id="@+id/localization_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/base_toolbar_title"
+            android:textColor="@color/white" />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+        android:layout_below="@id/localization_toolbar">
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        <LinearLayout
+	        	android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:orientation="horizontal">
+
+				<Button
+					android:id="@+id/btnComenzar"
+					android:layout_width="0px"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="@string/geo_localizacion_comenzar_button_text" />
+	             <Button
+	                android:id="@+id/btnDetener"
+	                android:layout_width="0px"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/geo_localizacion_detener_button_text"
+	                android:onClick="btnDetenerOnClick" 
+	                android:enabled="false" />
+	        </LinearLayout>
+	        <ProgressBar
+	            android:id="@+id/progressBar1"
+	            style="?android:attr/progressBarStyleLarge"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:layout_gravity="center_horizontal"
+	            android:visibility="gone"/>
+	        <View
+		        android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:background="@android:color/darker_gray" />
+	        <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/geo_localizacion_coordenadas_actuales"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+	        <View
+		        android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:background="@android:color/darker_gray" />
+	        <TextView 
+                android:id="@+id/lblLatitudB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/geo_localizacion_latitud_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        	<TextView
+	            android:id="@+id/lblLatitud"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="15dp"
+	            android:layout_weight=".1"
+	            android:text="@string/geo_localizacion_initial_text"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textStyle="italic"/>
+	        <TextView 
+                android:id="@+id/lblLongitudB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/geo_localizacion_longitud_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        	<TextView
+	            android:id="@+id/lblLongitud"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="15dp"
+	            android:layout_weight=".1"
+	            android:text="@string/geo_localizacion_initial_text"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textStyle="italic"/>
+			<TextView 
+                android:id="@+id/lblPrecisionB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/geo_localizacion_precision_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        	<TextView
+	            android:id="@+id/lblPrecision"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="15dp"
+	            android:layout_weight=".1"
+	            android:text="@string/geo_localizacion_initial_text"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textStyle="italic"/>
+        	<View
+		        android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:background="@android:color/darker_gray" />
+        	<TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/geo_localizacion_coordenadas_optimas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+	        <View
+		        android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:background="@android:color/darker_gray" />
+        	<TextView 
+                android:id="@+id/lblLatitudOptimoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/geo_localizacion_latitud_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        	<TextView
+	            android:id="@+id/lblLatitudOptimo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="15dp"
+	            android:layout_weight=".1"
+	            android:text="@string/geo_localizacion_initial_text"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textStyle="italic"/>
+	        <TextView 
+                android:id="@+id/lblLongitudOptimoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/geo_localizacion_longitud_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        	<TextView
+	            android:id="@+id/lblLongitudOptimo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="15dp"
+	            android:layout_weight=".1"
+	            android:text="@string/geo_localizacion_initial_text"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textStyle="italic"/>
+			<TextView
+                android:id="@+id/lblPrecisionOptimoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/geo_localizacion_precision_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        	<TextView
+	            android:id="@+id/lblPrecisionOptimo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="15dp"
+	            android:layout_weight=".1"
+	            android:text="@string/geo_localizacion_initial_text"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textStyle="italic"/>
+        	<View
+		        android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:background="@android:color/darker_gray" />
+           <Button
+           	  android:id="@+id/btnEnviarDatos" 
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/geo_localizacion_enviar_datos_button_text"
+              android:onClick="btnEnviarDatosOnClick" 
+              android:enabled="false" />
+	    </LinearLayout>
+	</ScrollView>
+</RelativeLayout>

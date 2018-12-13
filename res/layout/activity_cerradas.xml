@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/base_form_vertical"
+    android:paddingRight="@dimen/base_form_vertical"
+    android:paddingTop="@dimen/base_form_vertical"
+    android:paddingBottom="@dimen/base_form_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/request_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/idRequestTextViewList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_detail_initial_text"
+            android:textSize="@dimen/base_form_sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/descClienteTextViewList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_detail_initial_text"
+            android:textSize="@dimen/base_form_sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/negocioViewList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_detail_initial_text"
+            android:textSize="@dimen/base_form_sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/descServicioTextViewList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_detail_initial_text"
+            android:textSize="@dimen/base_form_sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/fechaAltaTextViewList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_detail_initial_text"
+            android:textSize="@dimen/base_form_sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/fechaGarantiaTextViewList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_detail_initial_text"
+            android:textSize="@dimen/base_form_sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/fechaAtencionTextViewList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_detail_initial_text"
+            android:textSize="11sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/statusdocumentTextViewList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_detail_initial_text"
+            android:textSize="@dimen/base_form_sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/comentDocumentoTextViewList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_detail_initial_text"
+            android:textSize="@dimen/base_form_sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/lightIcon"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:contentDescription="@string/base_desc_status_icon"
+        android:layout_gravity="center_vertical"/>
+</RelativeLayout>

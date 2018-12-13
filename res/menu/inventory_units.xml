@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_inventory_units_no_serie"
+        android:title="@string/inventario_no_serie_menu_button_text"
+        android:orderInCategory="1"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_inventory_units_model"
+        android:title="@string/inventario_modelo_menu_button_text"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_inventory_units_client"
+        android:title="@string/inventario_cliente_menu_button_text"
+        android:orderInCategory="3"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_inventory_units_new_shipment"
+        android:title="@string/nuevo_nuevoenvio_menu"
+        android:orderInCategory="4"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_inventory_units_shipments_in_process"
+        android:title="@string/nuevo_enviosproceso_menu"
+        android:orderInCategory="5"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_inventory_units_receptions"
+        android:title="@string/nuevo_recepciones_menu"
+        android:orderInCategory="6"
+        app:showAsAction="never" />
+</menu>

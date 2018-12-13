@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8"
+        android:orientation="vertical" >
+    	
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+            <TextView
+                android:id="@+id/listrowretiroUnidadTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/retiro_id_unidad_text"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+            
+	        <TextView
+	            android:id="@+id/listrowretiroUnidadTextViewContent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/retiro_initial_text"
+	            android:textSize="11sp" />
+	    
+	    </LinearLayout>  
+	    
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+            <TextView
+                android:id="@+id/listrowretiroClienteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/retiro_cliente_text"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+            
+	        <TextView
+	            android:id="@+id/listrowretiroClienteTextViewContent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/retiro_initial_text"
+	            android:textSize="11sp" />
+	    
+	    </LinearLayout>  
+        
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+            <TextView
+                android:id="@+id/listrowretiroMarcaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/retiro_marca_text"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+            
+	        <TextView
+	            android:id="@+id/listrowretiroMarcaTextViewContent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/retiro_initial_text"
+	            android:textSize="11sp" />
+	    
+	    </LinearLayout>  
+	    
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+            <TextView
+                android:id="@+id/listrowretiroModeloTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/retiro_modelo_text"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+            
+	        <TextView
+	            android:id="@+id/listrowretiroModeloTextViewContent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/retiro_initial_text"
+	            android:textSize="11sp" />
+	    
+	    </LinearLayout>  
+        
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+            <TextView
+                android:id="@+id/listrowretiroNoSerieTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/retiro_no_serie_text"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+            
+	        <TextView
+	            android:id="@+id/listrowretiroNoSerieTextViewContent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/retiro_initial_text"
+	            android:textSize="11sp" />
+	    
+	    </LinearLayout>  
+	    
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+            <TextView
+                android:id="@+id/listrowretiroNoEquipoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/retiro_no_equipo_text"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+            
+	        <TextView
+	            android:id="@+id/listrowretiroNoEquipoTextViewContent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/retiro_initial_text"
+	            android:textSize="11sp" />
+	    
+	    </LinearLayout>  
+	    
+        <LinearLayout
+            android:id="@+id/layoutExtra"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:visibility="gone"
+			android:orientation="horizontal"
+            >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".8" >
+
+            <Button
+                android:id="@+id/listrowretiroConfirmarRetiroButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:text="Confirmar Retiro"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/listrowretiroVerRetiroButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:text="Ver Retiro"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/listrowretiroCancelarRetiro"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="@string/retiro_cancelarretiro_button"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+             
+    </LinearLayout>
+    
+</LinearLayout>

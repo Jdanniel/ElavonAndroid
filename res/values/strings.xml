@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Microformas</string>
+    <string name="version_title_prod">Versión</string>
+    <string name="version_title_test">Versión - TEST</string>
+    <string name="version_value_prod">2.0.1</string>
+    <string name="version_value_test">2.0.1</string>
+    <string name="title_activity_login">Inicio de Sesión</string>
+
+    <!-- Dummies -->
+    <string name="dummy_title">Dummy Title</string>
+    <string name="dummy_desc">This is a good dummy text in order to test the app design.</string>
+
+    <!-- Base -->
+    <string name="base_warehouse">Almacén:</string>
+    <string name="base_engineers">Ingeniero:</string>
+    <string name="base_client">Cliente:</string>
+    <string name="base_supply">Insumo:</string>
+    <string name="base_count">Cantidad:</string>
+    <string name="base_no_serie">No. Serie:</string>
+    <string name="base_no_guide">No. Guía:</string>
+    <string name="base_date">Fecha:</string>
+    <string name="base_priority">Prioridad:</string>
+    <string name="base_messaging">Mensajería:</string>
+    <string name="base_yes">Si</string>
+    <string name="base_no">No</string>
+    <string name="base_low">Baja</string>
+    <string name="base_medium">Media</string>
+    <string name="base_high">Alta</string>
+    <string name="base_update">Actualizar</string>
+    <string name="base_search">Buscar</string>
+    <string name="base_accept">Aceptar</string>
+    <string name="base_send">Enviar</string>
+    <string name="base_plus">+</string>
+    <string name="base_search_warehouse">Buscar Almacén</string>
+    <string name="base_search_engineers">Buscar Ingenieros</string>
+    <string name="base_desc_status_icon">Status de solicitud</string>
+
+    <!-- Activities -->
+    <string name="title_activity_main">Microformas</string>
+    <string name="title_activity_nuevas">Solicitudes Nuevas</string>
+    <string name="title_activity_abiertas">Solicitudes Abiertas</string>
+    <string name="title_activity_request_list">Nuevas</string>
+    <string name="title_activity_request_detail">Nuevas</string>
+    <string name="title_activity_viaticos">Viáticos</string>
+    <string name="title_activity_viaticos_list">Viáticos</string>
+    <string name="title_activity_refacciones">Refacciones</string>
+    <string name="title_activity_phototaking">Fotografía</string>
+    <string name="title_activity_terms">Terminos y Condiciones</string>
+    <string name="title_activity_comment">Comentario</string>
+    <string name="title_activity_refacciones_catalogs">Agregar</string>
+    <string name="title_activity_cierre">Cierre por Exito</string>
+    <string name="title_activity_cierre_rechazo">Cierre por Rechazo</string>
+    <string name="title_activity_sustitucion">Sustitución</string>
+    <string name="title_activity_unidad_instalacion_catalogs">Buscar Unidad de Instalación</string>
+    <string name="title_activity_refaccion_instalacion_catalogs">Buscar Refacción de Instalación</string>
+    <string name="title_activity_instalacion">Instalación</string>
+    <string name="title_activity_substitutions">Sustituciones</string>
+    <string name="title_activity_look_for">Lista de Insumos</string>
+    <string name="title_activity_retiro">Retiro</string>
+    <string name="title_activity_actualizacion">Actualización</string>
+    <string name="title_activity_informacion_cierre">Información de Cierre</string>
+    <string name="title_activity_agregar_unidad">Agregar Unidad</string>
+    <string name="title_activity_agregar_unidad_negocio">Agregar Unidad al Negocio</string>
+    <string name="title_activity_geo_localizacion">GeoLocalización</string>
+    <string name="title_activity_nuevo_envio">Unidades a Enviar</string>
+    <string name="title_activity_inventario">Inventario</string>
+    <string name="title_activity_inventory_search_result">Resultado de Busqueda</string>
+    <string name="title_activity_unidad_detail">Detalle de Unidad</string>
+    <string name="title_activity_agregar_unidad_enviar">Agregar Unidad</string>
+    <string name="title_activity_agregar_refaccion">Agregar Refacción</string>
+    <string name="title_activity_ver_refacciones">Ver Refacciones</string>
+    <string name="title_activity_pendings_list">Bandeja de Envios</string>
+    <string name="title_activity_refacciones_unidad">Refacciones Unidad</string>
+    <string name="title_activity_file_browser">Navegador de Archivos</string>
+    <string name="title_activity_log_comentario">Ver Comentario</string>
+    <string name="title_activity_agregar_refaccion_unidad">Agregar Refacción Unidad</string>
+    <string name="title_activity_terminal">Pendiente (Terminal)</string>
+    <string name="title_activity_terminal_list">Terminal [Almacenes]</string>
+    <string name="title_activity_spare_part">Pendiente (Spare Parts)</string>
+    <string name="title_activity_pendiente_insumo">Pendiente (Insumo)</string>
+    <string name="title_activity_spare_part_list">Spare Part [Spare Part]</string>
+    <string name="title_activity_pendiente_insumo_list">Insumo [Almacen]</string>
+    <string name="title_activity_example">Example</string>
+    <string name="title_activity_time_and_date">TimeAndDate</string>
+    <string name="title_activity_server">Opciones de Servidor</string>
+    <string name="title_activity_new_shipment">Nuevo Envío</string>
+    <string name="title_activity_new_shipment_search">Busqueda</string>
+    <string name="title_activity_new_shipment_search_insumo">Buscar Insumo</string>
+    <string name="title_activity_new_shipment_search_sim">Buscar SIM</string>
+    <string name="title_activity_inventory">Inventario</string>
+    <string name="title_activity_inventory_supplies">InventorySuppliesActivity</string>
+    <string name="title_activity_inventory_unit_search_detail">Detalle de busqueda</string>
+    <string name="title_activity_receptions_list">Envíos Recibidos</string>
+    <string name="title_activity_shipment_detail">Detalle de Envío</string>
+    <string name="title_activity_process_shipment_list">Envíos Pendientes</string>
+    <string name="title_activity_inventory_movements">Movimientos de Inventario</string>
+    <string name="title_activity_inventory_movement_supply">Insumo</string>
+    <string name="title_activity_insert_new_movement_supply">Insertar Insumo</string>
+    <string name="title_activity_causa_retiro">Causas de Retiro</string>
+
+    <string name="section_inv_units">Unidades</string>
+    <string name="section_inv_supplies">Supplies</string>
+
+    <!-- Login Activity -->
+    <string name="login_desc_logo">Microformas</string>
+    <string name="login_welcome">Por favor, ingrese su usuario y contraseña</string>
+    <string name="login_user">Usuario</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_button">Ingresar</string>
+    <string name="login_check_user">Recordar usuario</string>
+    <string name="login_check_pass">Recordar usuario y contraseña</string>
+    <string name="login_recovery">Recuperar contraseña</string>
+
+    <!-- Server Activity -->
+    <string name="server_text_test">URL Pruebas:</string>
+    <string name="server_text_live">URL Producción:</string>
+
+    <!-- Main Activity -->
+    <string name="main_news_text">Nuevas</string>
+    <string name="main_opened_text">Abiertas</string>
+    <string name="main_closed_text">Cerradas</string>
+    <string name="main_pending_text">Pendientes</string>
+    <string name="main_units_text">Inventario</string>
+    <string name="main_inbox_text">Bandeja</string>
+    <string name="main_update_text">Actualizaciones</string>
+    <string name="main_docs_text">Documentos</string>
+
+    <!-- Menus -->
+    <string name="menu_test">App Pruebas</string>
+    <string name="menu_prod">App Producción</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="menu_logout">Cerrar Sesión</string>
+    <string name="menu_logout_question">¿Desea cerrar su sesión?</string>
+    <string name="menu_update">Forzar actualización</string>
+    <string name="menu_update_question">¿Desea actualizar los catálogos y solicitudes?</string>
+    <string name="menu_version">Ver Versión</string>
+    <string name="menu_server">Servidor</string>
+    <string name="menu_password">Recuperar Contraseña</string>
+
+    <!-- Inventory Activity -->
+    <string name="inventory_destination">Destino:</string>
+    <string name="inventory_guide">No. de Guía:</string>
+
+    <!-- Pantalla de busqueda pendiente terminal -->
+    <string name="terminal_button_add_terminal">AGREGAR TERMINAL</string>
+    <string name="terminal_searching_title">Agregar Terminal</string>
+    <string name="terminal_button_local">LOCAL</string>
+    <string name="terminal_button_baja">BAJA</string>
+    <string name="terminal_list_button_add">AGREGAR ALMACEN</string>
+    <string name="terminal_button_add">Agregar</string>
+    
+    <!-- Pantalla de busqueda pendiente refaccion -->
+    <string name="refaccion_button_add_refaccion">AGREGAR REFACCIÓN</string>
+    <string name="refaccion_searching_title">Agregar Refacción</string>
+    <string name="refaccion_searching_moneda">Moneda</string>
+    <string name="refaccion_searching_costo">Costo:</string>
+    <string name="refaccion_searching_pesos">PESOS</string>
+    
+    <!-- Pantalla de busqueda pendiente insumo -->
+    <string name="insumo_button_add_insumo">AGREGAR INSUMO</string>
+    <string name="insumo_searching_title">Agregar Insumo</string>
+    
+    <!-- NEW FIELDS FOR CIERRE AND CIERRE_RECHAZO \( '.'   )-->
+	<string name="title_clave_rechazo">Clave Rechazo:</string>
+	<string name="title_no_sim">No. SIM:</string>
+
+    <!-- Mensaje de Requiere Actualizacion -->
+    <string name="nueva_version">Hay una nueva versión de Microformas</string>
+    <string name="descargar_version">Es necesario descargar la nueva versión para continuar</string>
+    <string name="ok">Aceptar</string>
+    <string name="ok_mayus">ACEPTAR</string>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#EAEAEA</color>
+    <color name="blue">#0000ff</color>
+
+    <!--Mensaje para password-->
+    <string name="hint_password">Ingresar password</string>
+
+    <!-- Menu de RequestDetail -->
+    <string name="request_detail_approve">Aprobar solicitud</string>
+    <string name="request_detail_refuse">Rechazar solicitud</string>
+    <string name="request_detail_status">Cambio de Status</string>
+    <!-- Abiertas -->
+    <string name="request_detail_camera">Tomar Foto</string>
+    <string name="request_detail_comment">Escribir Comentario</string>
+    <string name="request_detail_vercomentario">Ver Comentarios</string>
+    <string name="request_detail_success">Cerrar por Exito</string>
+    <string name="request_detail_reject">Cerrar por Rechazo</string>
+    <string name="request_detail_inventario">Mov. de Inventario</string>
+    <string name="request_detail_location">Obtener Localización Negocio</string>
+    <!-- Cerradas -->
+    <string name="request_detail_close">Información del Cierre</string>
+
+    <!-- Pantalla de RequestDetail -->
+    <string name="request_detail_initial_text">(sin información)</string>
+    <string name="request_detail_no_ar">Número de Solicitud:</string>
+    <string name="request_detail_status_text">Status:</string>
+    <string name="request_detail_cliente">Cliente:</string>
+    <string name="request_detail_afiliacion">Afiliación:</string>
+    <string name="request_detail_fec_reporte">Fecha de Reporte:</string>
+    <string name="request_detail_fec_garantia">Fecha de Garantía:</string>
+    <string name="request_detail_fec_cierre">Fecha de Cierre:</string>
+    <string name="request_detail_servicio">Servicio:</string>
+    <string name="request_detail_descripcion">Descripción:</string>
+    <string name="request_detail_bitacora">Bitácora:</string>
+    <string name="request_detail_noserie">No. de Serie:</string>
+    <string name="request_detail_dispositivo">Datos de TPV o Dispositivo:</string>
+    <string name="request_detail_software">Aplicativo:</string>
+    <string name="request_detail_connectivity">Conectividad:</string>
+    <string name="request_detail_direccion">Dirección:</string>
+    <string name="request_detail_negocio">Negocio:</string>
+    <string name="request_detail_telefono">Teléfono:</string>
+    <string name="request_detail_fec_cita">Fecha de Cita:</string>
+
+    <!-- Pantalla de ViaticosActivity -->
+    <string name="viaticos_sending_text">Viáticos a Enviar:</string>
+    <string name="viaticos_add_button">Agregar Viáticos</string>
+    <string name="viaticos_delete_button">Borrar</string>
+    <string name="viaticos_place_text">Lugar</string>
+    <string name="viaticos_observations_text">Observaciones</string>
+    <string name="viaticos_priority_text">Prioridad</string>
+    <string name="viaticos_send_button">ENVIAR</string>
+
+    <!-- Pantalla de ViaticosListActivity -->
+    <string name="viaticos_list_viaticos_text">Viáticos: </string>
+    <string name="viaticos_list_costo_text">Costo: </string>
+    <string name="viaticos_list_add_viatico">AGREGAR</string>
+    <string name="pendiente_viatico">Cerrar por Viáticos</string>
+    <string name="pendiente_refaccion">Cerrar por Refacción</string>
+    <string name="pendiente_terminal">Cerrar por Terminal</string>
+    <string name="pendiente_spareparts">Cerrar por Spare Parts</string>
+    <string name="pendiente_insumos">Cerrar por Insumos</string>
+
+    <!-- Pantalla de Terminos y Condiciones -->
+    <string name="button_yes_terms">Acepto</string>
+    <string name="button_no_terms">Cancelar</string>
+    <string name="content_terms_activity">Microformas, S.A. de C.V\n\nHAGO CONSTAR QUE RECIBÍ EL EQUIPO DESCRITO EL CUAL QUEDA BAJO MI TOTAL RESPONSABILIDAD Y ME OBLIGO A: \n\n1. EMPLEARLO ÚNICAMENTE PARA EL USO ASIGNADO POR LA EMPRESA.\n\n2. DEVOLVERLO SIN DEMORAS DE NINGUNA ESPECIE, CUANDO ASÍ SE REQUIERA.\n\n3. REPORTAR DE INMEDIATO CUALQUIER  ANOMALÍA O DESAJUSTE A FIN DE PODER CORREGIR EL DESVIO.\n\n4. REPORTAR  AL AREA DE INVENTARIOS, SU EXTRAVÍO O ROBO Y SEGUIR INSTRUCCIONES AL RESPECTO.</string>
+    
+    <!-- Pantalla de RefaccionesActivity -->
+    <string name="refacciones_storage_text">Almacén: </string>
+    <string name="refacciones_brand_text">Marca: </string>
+    <string name="refacciones_model_text">Modelo: </string>
+    <string name="refacciones_storage_button">Buscar Almacén</string>
+    <string name="refacciones_brand_button">Buscar Marca</string>
+    <string name="refacciones_model_button">Buscar Modelo</string>
+    <string name="refacciones_amount_text">Cantidad: </string>
+    <string name="refacciones_notes_text">Notas: </string>
+    <string name="refacciones_address_text">Dirección: </string>
+    <string name="refacciones_service_text">Tipo de Servicio: </string>
+    <string name="refacciones_priority_text">Prioridad:  </string>
+    <string name="refacciones_send_button">Enviar:  </string>
+    <string name="refacciones_noinfo_text"></string>
+    <string name="comment_comment_text">Comentario: </string>
+    <string name="refacciones_nuevo_checkbox">Nuevo</string>
+    <string name="refacciones_daniado_checkbox">Dañado</string>
+
+    <!-- Pantalla de CierreActivity -->
+    <string name="cierre_causa_text">Causa: </string>
+    <string name="cierre_solucion_text">Solución: </string>
+    <string name="cierre_descripcion_text">Descripción: </string>
+    <string name="cierre_atiende_text">Atiende: </string>
+    <string name="cierre_fechacierre_text">Fecha Cierre: </string>
+    <string name="cierre_foliotas_text">Folio: </string>
+    <string name="cierre_codigointervencion_text">Código Intervención: </string>
+    <string name="cierre_otorgantetas_text">Otorgante Folio: </string>
+    <string name="cierre_noequipo_text">No. de Equipo: </string>
+    <string name="cierre_noserie_text">No. de Serie: </string>
+    <string name="cierre_noinventario_text">No. de Inventario: </string>
+    <string name="cierre_modelo_text">Modelo: </string>
+    <string name="cierre_fechallegada_text">Fecha Llegada : </string>
+    <string name="cierre_fechallegadaterceros_text">Fecha Llegada Terceros: </string>
+    <string name="cierre_folioservicio_text">Folio de Servicio: </string>
+    <string name="cierre_fechainiing_text">Fecha Inicio Ingenieros: </string>
+    <string name="cierre_fechafining_text">Fecha Fin Ingenieros: </string>
+    <string name="cierre_otorgantevobo_text">Otorgante VoBo: </string>
+    <string name="cierre_otorgantevoboterceros_text">Otorgante VoBo Terceros: </string>
+    <string name="cierre_intensidadsenal_text">Intensidad de la Señal: </string>
+    <string name="cierre_simreemplazada_text">Sim Reemplazada:  </string>
+    <string name="cierre_digitoverif_text">Dígito Verificador:  </string>
+    <string name="cierre_tipofalla_text">Tipo Falla Encontrada:  </string>
+    <string name="calidadBillete_text">Calidad de Billete:  </string>
+    <string name="condicionSite_text">Condición del Site:  </string>
+    <string name="cierre_esptipofalla_text">Especifica el Tipo de Falla Encontrada:  </string>
+    <string name="cierre_fallaencontrada_text">Falla Encontrada:  </string>
+    <string name="cierre_otorvobocliente_text">Otorgante Visto Bueno Cliente: </string>
+    <string name="cierre_voltajeneutro_text">Voltaje Neutro: </string>
+    <string name="cierre_voltajetierra_text">Voltaje Tierra: </string>
+    <string name="cierre_voltajetierraneutro_text">Voltaje Tierra Neutro: </string>
+    <string name="cierre_foliovalidacion_text">Folio Validación: </string>
+    <string name="cierre_foliotir_text">Folio TIR: </string>
+    <string name="cierre_motivocobro_text">Motivo de Cobro: </string>
+    <string name="cierre_soportecliente_text">Soporte Cliente: </string>
+    <string name="cierre_cobrable_text">Cobrable: </string>
+    <string name="cierre_cadenacierre_text">Cadena de Cierre Escrita: </string>
+    <string name="cierre_instalacionllaves_text">Instalación Llaves: </string>
+    <string name="cierre_tipollaves_text">Tipos de Llaves Cargadas: </string>
+    <string name="cierre_statusinstalacion_text">Status Instalación Llaves: </string>
+    <string name="cierre_boletin_text">Boletín: </string>
+    <string name="cierre_otorsoporte_text">Otorgante Soporte Cliente: </string>
+    <string name="cierre_personallavesa_text">Nombre Persona Llaves A: </string>
+    <string name="cierre_personallavesb">Nombre Persona Llaves B:</string>
+    <string name="cierre_tipopassword_text">Tipo Password: </string>
+    <string name="cierre_tipoteclado_text">Tipo Teclado: </string>
+    <string name="cierre_versionteclado_text">Versión Teclado EPP: </string>
+    <string name="cierre_procesador_text">Procesador: </string>
+    <string name="cierre_velocidadprocesador_text">Velocidad Procesador: </string>
+    <string name="cierre_memoria_text">Memoria: </string>
+    <string name="cierre_discoduro_text">Capacidad Disco Duro: </string>
+    <string name="cierre_monitor_text">Monitor: </string>
+    <string name="cierre_lectortarjeta_text">Lector Tarjeta: </string>
+    <string name="cierre_aplicacion_text">Aplicación: </string>
+    <string name="cierre_version_text">Versión: </string>
+    <string name="cierre_caja_text">Caja: </string>
+    <string name="cierre_tipocobro_text">Tipo de Cobro: </string>
+    <string name="cierre_tipoprecio_text">Tipo de Precio: </string>
+    <string name="cierre_moneda_text">Moneda: </string>
+    <string name="cierre_horasatencion_text">Horas de Atención: </string>
+    <string name="cierre_horariouptime_text">Horario Uptime: </string>
+    <string name="cierre_horarioacceso_text">Horario Atención: </string>
+    <string name="cierre_encontrato_text">En Contrato: </string>
+    <string name="cierre_afectacionuptime_text">Afectación Uptime: </string>
+    <string name="cierre_precioservicio_text">Precio del Servicio: </string>
+    <string name="cierre_confirmarexito_button">CONFIRMAR EXITO</string>
+
+    <!-- Pantalla de CierreRechazoActivity -->
+    <string name="rechazo_causa_text">Causa: </string>
+    <string name="rechazo_causarechazo_text">Causa del Rechazo: </string>
+    <string name="rechazo_solucion_text">Solución: </string>
+    <string name="rechazo_fechacierre_text">Fecha Cierre: </string>
+    <string name="rechazo_autorizado_text">Autorizado: </string>
+    <string name="rechazo_folioservicio_text">Folio de Servicio: </string>
+    <string name="rechazo_otorgantevobocau_text">Otorgante Visto Bueno CAU: </string>
+    <string name="rechazo_descripciontrabajo_text">Descripción del Trabajo: </string>
+    <string name="rechazo_tipofallaencontrada_text">Tipo Falla Encontrada: </string>
+    <string name="rechazo_especificacausarechazo_text">Especifique la Causa del Rechazo: </string>
+    <string name="rechazo_tipocobro_text">Tipo de Cobro: </string>
+    <string name="rechazo_tipoprecio_text">Tipo de Precio: </string>
+    <string name="rechazo_moneda_text">Moneda: </string>
+    <string name="rechazo_horasatencion_text">Horas de Atención: </string>
+    <string name="rechazo_cobrable_text">Cobrable: </string>
+    <string name="rechazo_precioservicio_text">Precio del Servicio: </string>
+    <string name="rechazo_confirmarrechazo_button">CONFIRMAR RECHAZO</string>
+    <string name="rechazo_folio_error">Debes escribir el Folio del Servicio</string>
+    <string name="rechazo_otorgantevobo_error">Debes escribir el Otorgante del Visto Bueno</string>
+    <string name="rechazo_autorizador_error">Debes escribir el Autorizador</string>
+    <string name="rechazo_descripciontrabajo_error">Debes escribir la Descripción del Trabajo</string>
+    <string name="rechazo_causarechazo_error">Debes escribir la Causa del Rechazo</string>
+    <string name="rechazo_seleccionarcausarechazo_error">Debes seleccionar la Causa del Rechazo</string>
+    <string name="rechazo_especificacioncausarechazo_error">Debes seleccionar la Especificación de la Causa del Rechazo</string>
+    <string name="rechazo_enviandopeticion_message">Enviando Petición</string>
+    <string name="rechazo_confirmarrechazo_message">Confirmar como Rechazo</string>
+
+    <!-- Pantalla de SustitucionActivity -->
+    <string name="sustitucion_espererecoleccion_message">Espere mientras se recolecta la información del negocio</string>
+    <string name="sustitucion_confirmadas_text">Sustituciones Confirmadas</string>
+    <string name="sustitucion_unidadesnegocio_text">Unidades del Negocio</string>
+    <string name="sustitucion_unidadestecnico_text">Unidades del Técnico</string>
+    <string name="sustitucion_confirmarsustitucion_button">Confirmar Sustitución</string>
+    <string name="sustitucion_unidadentrada_error">Debe seleccionar una unidad de entrada</string>
+    <string name="sustitucion_unidadsalida_error">Debe seleccionar una unidad de salida</string>
+    <string name="sustitucion_unidadinstalada_error">La unidad instalada no corresponde con la unidad retirada</string>
+    <string name="susticucion_entradasalida_error">Debe seleccionar una unidad de entrada y una de salida</string>
+    <string name="sustitucion_numeroequipo_error">Debe escribir un número de equipo para la unidad de entrada</string>
+    <string name="sustitucion_registrando_message">Registrando petición</string>
+    <string name="sustitucion_errorconfirmacion_message">Error al confirmar el retiro: </string>
+    <string name="sustitucion_idunidad_text">ID Unidad: </string>
+    <string name="sustitucion_idrefaccion_text">ID Refacción: </string>
+    <string name="sustitucion_cliente_text">Cliente: </string>
+    <string name="sustitucion_marca_text">Marca: </string>
+    <string name="sustitucion_modelo_text">Modelo: </string>
+    <string name="sustitucion_noserie_text">No. Serie: </string>
+    <string name="sustitucion_status_text">Status: </string>
+    <string name="sustitucion_unidaddanada_text">Unidad Dañada: Sí</string>
+    <string name="sustitucion_estaunidad_text">Seleccionar esta unidad</string>
+    <string name="sustitucion_tecnico_text">Técnico: </string>
+    <string name="sustitucion_negocio_text">Negocio: </string>
+    <string name="sustitucion_noserieentrada_text">No. Serie Entrada: </string>
+    <string name="sustitucion_noseriesalida_text">No. Serie Salida: </string>
+    <string name="sustitucion_cancelar_button">Cancelar sustitución</string>
+    <string name="sustitucion_initial_text">(sin información)</string>
+
+    <!-- Pantalla de InstalacionActivity</string> -->
+    <string name="instalacion_cliente">Cliente: </string>
+    <string name="instalacion_marca">Marca: </string>
+    <string name="instalacion_modelo">Modelo: </string>
+    <string name="instalacion_no_serie">No. Serie: </string>
+    <string name="instalacion_status_unidad">Status Unidad: </string>
+    <string name="instalacion_no_equipo">No. Equipo: </string>
+    <string name="instalacion_instaladas">Instalaciones Confirmadas</string>
+    <string name="instalacion_unidad">Unidad</string>
+    <string name="instalacion_id_unidad">ID Unidad: </string>
+    <string name="instalacion_refaccion">Refacción</string>
+    <string name="instalacion_info">Espere mientras se recolecta la información del Negocio...</string>
+    <string name="instalacion_buscar_unidad">Buscar Unidad</string>
+    <string name="instalacion_confirmar">Confirmar Instalación</string>
+    <string name="instalacion_initial_text">(sin información)</string>
+    <string name="instalacion_cambiarunidad_text">Cambiar unidad</string>
+    <string name="instalacion_instalarrefaccion_button">Instalar Refacción</string>
+    <string name="instalacion_verrefacciones_button">Ver Refacciones</string>
+    <string name="instalacion_cancelarinstalacion_button">Cancelar Instalación</string>
+    <string name="instalacion_escribirnoequipo_error">Debes escribir forzosamente el No. del equipo</string>
+    <string name="instalacion_registropeticion_message">Registrando petición</string>
+    <string name="instalacion_errorinstalacion_error">Error en la instalación</string>
+    <string name="instalacion_errorcancelarinstalacion">Error al cancelar la instalación</string>
+
+    <!-- Pantalla de InsumoActivity -->
+    <string name="insumo_espereinformacionnegocio_message">Espere mientras se recolecta la información del negocio</string>
+    <string name="insumo_insumosregistrados_text">Insumos Registrados</string>
+    <string name="insumo_cantidad_text">Cantidad: </string>
+    <string name="insumo_agregarinsumo_text">Agregar Insumo</string>
+    <string name="insumo_enviarinsumos_text">Enviar Insumos</string>
+    <string name="insumo_ingresecantidadmayor_error">Ingrese una cantidad mayor a cero del insumo</string>
+    <string name="insumo_registropeticion_error">Registrando petición</string>
+    <string name="insumo_errorregistro_error">Error en el registro del insumo </string>
+    <string name="insumo_insumo_text">Insumo: </string>
+    <string name="insumo_usuario_text">Usuario: </string>
+    <string name="insumo_fecha_text">Fecha: </string>
+    <string name="insumo_costounitario_text">Costo Unitario: </string>
+    <string name="insumo_costototal_text">Costo Total: </string>
+    <string name="insumo_cancelarinsumo_button">Cancelar Insumo</string>
+    <string name="insumo_errorretirarinsumo_error">Error al retirar el insumo</string>
+    <string name="sustitucion_noequipo">No. Equipo: </string>
+    <string name="insumo_insumo">Insumo:</string>
+    <string name="insumos_cantidad">"Cantidad: "</string>
+    <string name="insumo_insertarInsumo_button">Agregar</string>
+    <string name="insumo_look_for_insumo">BUSCAR INSUMO</string>
+    <string name="insumo_textview_loof_for">Buscar:</string>
+    <string name="insumo_hint_loof_for">Nombre de Insumo</string>
+
+    <!-- Pantalla de Retiro -->
+    <string name="retiro_unidadesnegocio_text">Unidades del Negocio</string>
+    <string name="retiro_confirmarretiro_button">Confirmar Retiro</string>
+    <string name="retiro_isDaniada_text">¿Unidad Dañada?</string>
+    <string name="retiro_id_unidad_text">Id Unidad: </string>
+    <string name="retiro_cliente_text">Cliente: </string>
+    <string name="retiro_marca_text">Marca: </string>
+    <string name="retiro_modelo_text">Modelo: </string>
+    <string name="retiro_no_serie_text">No. Serie: </string>
+    <string name="retiro_no_equipo_text">No. Equipo</string>
+    <string name="retiro_cancelarretiro_button">Cancelar Retiro</string>
+    <string name="retiro_initial_text">(sin información)</string>
+    <string name="retiro_uniadades_retiro_text">Unidades de Retiro</string>
+
+    <!-- Pantalla de Moviemientos de Inventario -->
+    <string name="mov_inv_info">Espere mientras se recolecta la información...</string>
+    <string name="mov_inv_instalacion">Instalación: </string>
+    <string name="mov_inv_retiro">Retiro: </string>
+    <string name="mov_inv_sustitucion">Sustitución: </string>
+    <string name="mov_inv_insumo">Insumo: </string>
+    <string name="mov_inv_actualizacion">Actualización: </string>
+    <string name="mov_inv_boton_instalacion">Registrar o Cancelar Instalación</string>
+    <string name="mov_inv_boton_retiro">Registrar o Cancelar Retiro</string>
+    <string name="mov_inv_boton_sustitucion">Registrar o Cancelar Sustitución</string>
+    <string name="mov_inv_boton_insumo">Registrar o Cancelar Insumo</string>
+    <string name="mov_inv_boton_actualizacion">Registrar Actualización</string>
+    <string name="mov_inv_error_no_soportado">Movimiento de Inventario no soportado.</string>
+
+    <!-- Pantalla de Informacion de Cierre -->
+    <string name="info_noar_text">No. Solicitud: </string>
+    <string name="info_val_tex">Cadena de Cierre: </string>
+
+    <!-- Pantalla de Informacion de Actualizacion -->
+    <string name="actual_negocio_text">Negocio: </string>
+    <string name="actual_agregarunidades_button">Agregar Unidad</string>
+    <string name="actual_sininformacion_text">(sin información)</string>
+
+    <!-- Pantalla de Unidades del Negocio -->
+    <string name="uni_activity_unidades">Unidades del Negocio</string>
+    <string name="uni_idunidad_text">ID Unidad: </string>
+    <string name="uni_negocio_text">Negocio: </string>
+    <string name="uni_connectivity_text">Conectividad: </string>
+    <string name="uni_software_text">Software: </string>
+    <string name="uni_cliente_text">Cliente: </string>
+    <string name="uni_marca_text">Marca: </string>
+    <string name="uni_modelo_text">Modelo: </string>
+    <string name="uni_noserie_text">No. Serie: </string>
+    <string name="uni_noinventario_text">No. Inventario: </string>
+    <string name="uni_status_text">Status: </string>
+    <string name="uni_agregarrefaccion_button">Agregar Refacción</string>
+    <string name="uni_verrefacciones_button">Ver Refacciones</string>
+    <string name="uni_borrarunidad_button">Borrar Unidad</string>
+    <string name="uni_cargaunidades_message">Cargando las unidades, espere un momento.</string>
+
+    <!-- Pantalla de Agregar Unidades del Negocio -->
+    <string name="adduni_modelo_text">Modelo: </string>
+    <string name="adduni_connectivity_text">Conectividad: </string>
+    <string name="adduni_software_text">Software: </string>
+    <string name="adduni_idequipo_text">ID Equipo: </string>
+    <string name="adduni_noinventario_text">No. Inventario: </string>
+    <string name="adduni_noserie_text">No. Serie: </string>
+    <string name="adduni_nosim_text">No. SIM: </string>
+    <string name="adduni_carrier_text">Carrier: </string>
+    <string name="adduni_noimei_text">No. IMEI: </string>
+    <string name="adduni_nueva_check">Nueva</string>
+    <string name="adduni_daniada_check">Dañada</string>
+    <string name="adduni_agregar_button">Agregar</string>
+    <string name="adduni_sku_text">SKU:</string>
+
+    <!-- Pantalla de Geolocalizacion -->
+    <string name="geo_localizacion_latitud_text">Latitud: </string>
+    <string name="geo_localizacion_longitud_text">Longitud: </string>
+    <string name="geo_localizacion_precision_text">Precisión: </string>
+    <string name="geo_localizacion_radio_text">Radio: </string>
+    <string name="geo_localizacion_comenzar_button_text">Comenzar</string>
+    <string name="geo_localizacion_detener_button_text">Detener</string>
+    <string name="geo_localizacion_enviar_datos_button_text">Enviar Datos</string>
+    <string name="geo_localizacion_initial_text">(sin información)</string>
+    <string name="geo_localizacion_coordenadas_actuales">Coordenadas Actuales</string>
+    <string name="geo_localizacion_coordenadas_optimas">Coordenadas Óptimas</string>
+    <string name="geo_localizacion_info_envio">Enviando coordenadas, espere un momento.</string>
+
+    <!-- Pantalla de Nuevo Envio -->
+    <string name="nuevo_nuevoenvio_menu">Nuevo Envío</string>
+    <string name="nuevo_enviosproceso_menu">Envíos en Proceso</string>
+    <string name="nuevo_recepciones_menu">Recepciones</string>
+    <string name="nuevo_mensajeria_text">Mensajería: </string>
+    <string name="nuevo_prioridad_text">Prioridad: </string>
+    <string name="nuevo_unidadesenviar_text">Unidades a Enviar: </string>
+    <string name="nuevo_agregarunidad_button">Agregar Unidades</string>
+    <string name="nuevo_borrarunidad_button">Borrar</string>
+    <string name="nuevo_enviara_text">Enviar a: </string>
+    <string name="nuevo_noguia_text">No. Guia: </string>
+    <string name="nuevo_costo_text">Costo: </string>
+    <string name="nuevo_enviar_button">Enviar</string>
+    <string name="nuevo_almacen_text">(no asignado)</string>
+    <string name="nuevo_ingenieros_text">(no asignado)</string>
+    <string name="nuevo_almacen_button">Buscar Almacén</string>
+    <string name="nuevo_ingenieros_button">Buscar Ingenieros</string>
+
+    <!--Pantalla de Causa Retiro -->
+    <string name="btn_causa_retiro">Agregar</string>
+
+    <!-- Pantalla de Inventario -->
+    <string name="inventario_no_serie_menu_button_text">Buscar por Número de Serie</string>
+    <string name="inventario_modelo_menu_button_text">Buscar por Modelo</string>
+    <string name="inventario_cliente_menu_button_text">Buscar por Cliente</string>
+
+    <!-- Pantalla de Busqueda Inventario -->
+    <string name="busqueda_inventario_buscar_button_text">Buscar</string>
+    <string name="busqueda_inventario_no_serie_text">No. Serie</string>
+    <string name="busqueda_inventario_modelo_text">Modelo</string>
+    <string name="busqueda_inventario_cliente_text">Cliente</string>
+    <string name="busqueda_inventario_info_texto_vacio_text">Debe de introducir texto.</string>
+
+    <!-- Pantalla de Resultado de Busqueda Inventario -->
+    <string name="busqueda_inventario_resultado_text">Resultado de Busqueda</string>
+    <string name="busqueda_inventario_resultado_no_serie_text">No. Serie: </string>
+    <string name="busqueda_inventario_resultado_modelo_text">Modelo: </string>
+    <string name="busqueda_inventario_resultado_cliente_text">Cliente: </string>
+    <string name="busqueda_inventario_resultado_initial_text">(sin información)</string>
+    <string name="busqueda_inventario_resultado_ver_button_text">Ver</string>
+
+    <!-- Pantalla de Detalle de Unidad -->
+    <string name="unidad_detail_initial_text">(sin información)</string>
+    <string name="unidad_detail_unidad_text">Unidad: </string>
+    <string name="unidad_detail_id_text">Id: </string>
+    <string name="unidad_detail_marca_text">Marca: </string>
+    <string name="unidad_detail_modelo_text">Modelo: </string>
+    <string name="unidad_detail_cliente_text">Cliente: </string>
+    <string name="unidad_detail_fecha_alta_text">Fecha Alta: </string>
+    <string name="unidad_detail_no_inventario_text">No. Inventario: </string>
+    <string name="unidad_detail_no_serie_text">No. Serie: </string>
+    <string name="unidad_detail_imei_text">IMEI: </string>
+    <string name="unidad_detail_sim_text">SIM: </string>
+    <string name="unidad_detail_status_text">Status: </string>
+    <string name="unidad_detail_unidad_nueva_text">Unidad Nueva: </string>
+    <string name="unidad_detail_unidad_daniada_text">Unidad Dañada: </string>
+    <string name="unidad_detail_no_equipo_text">No. Equipo: </string>
+    <string name="unidad_detail_connectivity_text">Conectividad: </string>
+    <string name="unidad_detail_software_text">Aplicativo: </string>
+    <string name="unidad_detail_retiro_text">Retiro: </string>
+    <string name="unidad_detail_solicitud_recoleccion_text">Solicitud de Recolección: </string>
+
+    <!-- Pantallas de EnviosPendientesList y EnvioPendiente -->
+    <string name="pend_ver_button">Ver</string>
+    <string name="pend_activity_envio_pendiente">Envío Pendiente</string>
+    <string name="pend1_id_text">ID: </string>
+    <string name="pend1_responsable_text">Responsable: </string>
+    <string name="pend1_tiporesponsable_text">Tipo de Responsable: </string>
+    <string name="pend1_mensajeria_text">Servicio de Mensajería: </string>
+    <string name="pend1_noguia_text">No. de Guía: </string>
+    <string name="pend1_fecha_text">Fecha: </string>
+    <string name="pend1_sininformacion_text">(sin información)</string>
+    <string name="pend1_unidades_text">UNIDADES </string>
+    <string name="pend2_cliente_text">Cliente: </string>
+    <string name="pend2_marca_text">Marca: </string>
+    <string name="pend2_modelo_text">Modelo: </string>
+    <string name="pend2_noserie_text">No. Serie: </string>
+    <string name="pend2_noinventario_text">No. Inventario: </string>
+    <string name="pend2_noimei_text">No. IMEI: </string>
+    <string name="pend2_nosim_text">No. SIM: </string>
+    <string name="pend2_noequipo_text">No. Equipo: </string>
+    <string name="pend2_llaves_text">Llaves: </string>
+    <string name="pend2_software_text">Software: </string>
+    <string name="pend2_posicioninventario_text">Posición Inventario: </string>
+    <string name="pend2_statusunidad_text">Status Unidad: </string>
+    <string name="pend2_status_text">Status: </string>
+    <string name="pend2_fecha_text">Fecha Alta: </string>
+
+    <!-- Pantallas de RecepcionesList y Recepcion -->
+    <string name="recepcion_aceptar_button">Aceptar</string>
+
+    <!-- Pantalla de Ver Refacción -->
+    <string name="verref_negocio_text">Negocio:</string>
+    <string name="verref_cliente_text">Cliente:</string>
+    <string name="verref_marca_text">Marca:</string>
+    <string name="verref_modelo_text">Modelo:</string>
+    <string name="verref_noserie_text">No. Serie:</string>
+    <string name="verref_noinventario_text">No. Inventario:</string>
+    <string name="verref_status_text">Status:</string>
+    <string name="verref_borrarrefaccion_button">Borrar Refacción</string>
+
+    <!-- Actualizaciones -->
+    <string name="actualizacion_nuevas">Nuevas</string>
+    <string name="actualizacion_abiertas">Abiertas</string>
+    <string name="actualizacion_cerradas">Cerradas</string>
+    <string name="actualizacion_pendientes">Pendientes</string>
+    <string name="actualizacion_unidades">Unidades</string>
+    <string name="actualizacion_direcciones">Direcciones</string>
+    <string name="actualizacion_EnviosPend">Envios Pendientes</string>
+    <string name="actualizacion_Recepciones">Recepciones</string>
+    <string name="actualizacion_status">Status</string>
+    <string name="actualizacion_productos">Productos</string>
+    <string name="actualizacion_clientes">Clientes</string>
+    <string name="actualizacion_cambios">Cambios</string>
+    <string name="actualizacion_viaticos">Viaticos</string>
+    <string name="actualizacion_spareParts">Refacciones</string>
+    <string name="actualizacion_insumos">Insumos</string>
+    <string name="actualizacion_almacenes">Almacenes</string>
+    <string name="actualizacion_marcas">Marcas</string>
+    <string name="actualizacion_mSpareParts">Modelo Refacciones</string>
+    <string name="actualizacion_modelos">Modelos</string>
+    <string name="actualizacion_servicios">Servicios</string>
+    <string name="actualizacion_causas">Causas</string>
+    <string name="actualizacion_causasRechazo">Causa-Rechazo</string>
+    <string name="actualizacion_especCauRec">Especificación Causa-Rechazo</string>
+    <string name="actualizacion_soluciones">Soluciones</string>
+    <string name="actualizacion_grupos">Grupos</string>
+    <string name="actualizacion_gruposCli">Grupos-Clientes</string>
+    <string name="actualizacion_codigos0">Codigos0</string>
+    <string name="actualizacion_codigos1">Codigos1</string>
+    <string name="actualizacion_codigos2">Codigos2</string>
+    <string name="actualizacion_clientesMod">Clientes-Modelos</string>
+    <string name="actualizacion_servSol">Servicios-Soluciones</string>
+    <string name="actualizacion_tipoFalla">Tipo-Falla</string>
+    <string name="actualizacion_espTipoFalla">Especificación Tipo-Falla</string>
+    <string name="actualizacion_servCau">Servicio-Causa</string>
+    <string name="actualizacion_Ingenieros">Ingenieros</string>
+
+    <!-- Pantalla de Log Comentario -->
+    <string name="logcom_usuario_text">Usuario: </string>
+    <string name="logcom_tipocomentario_text">Tipo de Comentario: </string>
+    <string name="logcom_fecha_text">Fecha: </string>
+    <string name="logcom_comentario_text">Comentario: </string>
+
+    <!-- Documentos -->
+    <string name="documents_pendiente_text">Pendiente por hoja</string>
+    <string name="documents_revision_text">En revision</string>
+    <string name="documents_reemplazo_text">En Reemplazo</string>
+    <string name="documents_correcion_text">En Correcion</string>
+
+    <!-- Pendiente por Terminal -->
+    <string name="terminal_enviar_button">ENVIAR </string>
+    <string name="terminal_tiposervicio_opc1">Local</string>
+    <string name="terminal_tiposervicio_opc2">Foraneo</string>
+    <string name="terminal_almacen_button">BUSCAR ALMACÉN</string>
+    <string name="terminal_direcciones_text">Dirección: </string>
+    <string name="terminal_tiposervicio_text">Tipo de Servicio: </string>
+    <string name="terminal_urgencia_text">Prioridad: </string>
+    <string name="terminal_text_storage">Almacén: </string>
+    <string name="terminal_text_brand">Marca: </string>
+    <string name="terminal_text_model">Modelo: </string>
+    <string name="terminal_text_count">Cantidad: </string>
+    <string name="terminal_text_notes">Notas: </string>
+    <string name="terminal_text_commitment">Compromiso: </string>
+    <string name="terminal_text_connectivity">Conectividad: </string>
+    <string name="terminal_text_software">Aplicativo: </string>
+    <string name="terminal_title_brand">Terminal [Marca]</string>
+    <string name="terminal_title_model">Terminal [Modelo]</string>
+    <string name="terminal_title_connectivity">Terminal [Conectividad]</string>
+    <string name="terminal_title_application">Terminal [Aplicación]</string>
+    <string name="terminal_title_store">Terminal [Almacén]</string>
+
+    <string name="terminal_button_brand">Buscar Marca</string>
+    <string name="terminal_button_model">Buscar Modelo</string>
+    <string name="terminal_button_connectivity">Buscar Conectividad</string>
+    <string name="terminal_button_application">Buscar Aplicativo</string>
+
+    <string name="insumo_insumo_button">Buscar Insumo</string>
+    <string name="sparepart_sparepart_text">Spare Part: </string>
+    <string name="sparepart_sparepart_button">Buscar Spare Part</string>
+    <string name="pendins_insumo_text">Insumo: </string>
+    <string name="pendins_insumo_button">Buscar Insumo</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Fecha Nueva Solicitud -->
+    <string name="date_time_new">Fecha de Nueva Solicitud: </string>
+    <string name="date_time_accept">Aprobar</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="server">SERVIDOR</string>
+</resources>
